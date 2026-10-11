@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download A.R.C.A Relayer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #050505;
+            --card-bg: rgba(20, 20, 22, 0.7);
+            --text-main: #f0f0f0;
+            --text-muted: #a0a0a5;
+            --accent-1: #bb86fc;
+            --accent-2: #03dac6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem 1rem;
+            background: radial-gradient(circle at top left, rgba(187, 134, 252, 0.15), transparent 40%),
+                        radial-gradient(circle at bottom right, rgba(3, 218, 198, 0.1), transparent 40%);
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            margin-bottom: 2rem;
+        }
+
+        .app-icon {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+            border-radius: 25px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            box-shadow: 0 0 20px rgba(187, 134, 252, 0.4);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #fff, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p.desc {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(187, 134, 252, 0.2), rgba(3, 218, 198, 0.2));
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border: 1px solid var(--accent-2);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(3, 218, 198, 0.2);
+        }
+
+        .btn-download:hover {
+            transform: translateY(-3px);
+            background: rgba(3, 218, 198, 0.25);
+            box-shadow: 0 8px 25px rgba(3, 218, 198, 0.4);
+        }
+
+        .instructions {
+            text-align: left;
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .instructions h3 {
+            color: var(--accent-1);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .instructions ol {
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        .instructions li span {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: auto;
+            padding: 2rem 0;
+        }
+
+        footer a {
+            color: var(--accent-2);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="glass-card">
+            <!-- Ikon Aplikasi Sementara (Pakai Emoji, bisa diganti gambar nanti) -->
+            <div class="app-icon">🤖</div>
+            
+            <h1>A.R.C.A Relayer</h1>
+            <p class="desc">Aplikasi otonom cerdas yang membacakan pesan WhatsApp kamu secara otomatis menggunakan teknologi Text-To-Speech. Tetap fokus di jalan atau saat bekerja tanpa harus menyentuh layar.</p>
+            
+            <!-- TOMBOL DOWNLOAD: Nanti ganti '#' dengan link langsung ke file APK-mu di GitHub Releases -->
+            <a href="#" class="btn-download">Unduh APK Sekarang</a>
+
+            <div class="instructions">
+                <h3>⚠️ Cara Pemasangan Penting:</h3>
+                <ol>
+                    <li>Unduh file APK melalui tombol di atas.</li>
+                    <li>Buka file tersebut. Jika muncul peringatan <span>"Play Protect"</span>, klik <b>"More details" (Detail lainnya)</b> lalu pilih <b>"Install anyway" (Tetap instal)</b>.</li>
+                    <li>Setelah terinstal, buka A.R.C.A Relayer.</li>
+                    <li>Sistem akan meminta izin Akses Notifikasi. <span>Wajib diaktifkan</span> agar A.R.C.A bisa membaca pesan yang masuk.</li>
+                </ol>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Akmal Maula Aditya</p>
+            <p style="margin-top: 8px;">
+                <a href="https://github.com/mal1shade/arca-relayer-privacy" target="_blank">Kebijakan Privasi (Privacy Policy)</a>
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
